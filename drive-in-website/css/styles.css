@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ul {
+list-style-type: none;
+list-style-position: outside;
+padding-left: 1rem;
+}
+
+ol {
+list-style-type: none;
+list-style-position: outside;
+padding-left: 1.5rem;
+}
+
+ul ul, ol ul {
+list-style-type: circle;
+}
+
+ol ol, ul ol {
+list-style-type: lower-latin;
+}
+
+strong {
+font-weight: bold;
+}
+
+em {
+font-style: italic;
+}
+
+/* Style for website */
+.row .col-md-6{
+  color: #fff;
+	padding: 0;
+}
+.jumbotron{
+	margin: 0;
+	padding-bottom: 25%;
+}
+.col-6{
+  background-color: #222;
+	padding: 4em 2em;
+	border: #999 2px solid;
+}
+a.col-6{
+	padding: 0;
+	border: #999 2px solid;
+}
+a.col-6 img{
+	width: 100%;
+}
+.row{
+  margin: 0;
+  width: 100%;
+}
+.container{
+  max-width: 1020px;
+  padding: 0;
+}
+nav ol{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+nav ol li{
+	padding: 1.5em;
+	font-size: 1.2em;
+}
+.page-name{
+	background-color: #888;
+	border: #999 2px solid;
+	margin: .25em auto 0 auto;
+	width: 50%;
+	max-width: 630px;
+	text-align: center;
+	color: #fff;
+	padding: 1.5em;
+}
+.col-12{
+	background-color: #aaa;
+	border: #777 2px solid;
+	padding: 1em;
+	text-align: center;
+	margin-top: .25em;
+}
