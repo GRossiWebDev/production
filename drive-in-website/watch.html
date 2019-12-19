@@ -4,66 +4,140 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0,width=device-width,maximum-scale=1,minimum-scale=1,user-scalable=no" />
 	<title>Neon Drive In | Watch</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive-nav.css">
+	<link rel="stylesheet" type="text/css" href="css/position.css" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
-<body>
-	<header class="container">
-		<nav>
-			<ol>
+<body class="watch">
+		<!-- Movie posters need widths of 300px and height of about 442px -->
+		<!-- Search Menu in responsive-nav.js (command F) to change to hamburger btn. You can use img tags there, but the right alignment is done with text align -->
+	<header id="fixedbar">
+		<nav class="nav-collapse">
+			<ol id="fixednav">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="watch.html">Watch</a></li>
-				<li><a href="#">This is a link</a></li>
-				<li><a href="#">This is a link</a></li>
-				<li><a href="#">This is a link</a></li>
+				<li><a href="#">Play</a></li>
+				<li><a href="#">Eat</a></li>
+				<li><a href="#">Learn</a></li>
 			</ol>
 		</nav>
 	</header>
-	<section class="container page-name">
+	<section class="page-name">
 		<h2>Watch</h2>
 		<p>Days and Times</p>
 	</section>
-  <main class="container">
-    <article class="row">
-			<section class="col-md-6 row">
-        <h3 class="col-12">Screen #</h3>
-				<a class="col-6"><img src="img/now_showing/black_christmas.jpg"></a>
-        <a class="col-6"><img src="img/now_showing/cats.jpg"></a>
+  <main>
+    <article>
+			<section>
+        <h3>Screen 1</h3>
+					<section class="screen">
+						<div class="movie">
+							<figure>
+								<img src="img/now_showing/frozen2.jpg" alt="Frozen 2">
+							</figure>
+							<button type="button" name="more-info">More info</button>
+						</div>
+						<div class="movie">
+							<figure>
+								<img src="img/now_showing/spies.jpg" alt="Spies in Disguise">
+							</figure>
+							<button type="button" name="more-info">More info</button>
+						</div>
+					</section>
 			</section>
-      <section class="col-md-6 row">
-        <h3 class="col-12">Screen #</h3>
-				<a class="col-6"><img src="img/now_showing/frozen2.jpg"></a>
-        <a class="col-6"><img src="img/now_showing/grudge.jpg"></a>
+			<section>
+        <h3>Screen 2</h3>
+				<section class="screen">
+					<div class="movie">
+						<figure>
+							<img src="img/now_showing/black_christmas.jpg" alt="Black Christmas">
+						</figure>
+						<button type="button" name="more-info">More info</button>
+					</div>
+					<div class="movie">
+						<figure>
+							<img src="img/now_showing/grudge.jpg" alt="The Grudge">
+						</figure>
+						<button type="button" name="more-info">More info</button>
+					</div>
+				</section>
 			</section>
 		</article>
-      <article class="row">
-  			<section class="col-md-6 row">
-          <h3 class="col-12">Screen #</h3>
-  				<a class="col-6"><img src="img/now_showing/jumanji.jpg"></a>
-          <a class="col-6"><img src="img/now_showing/knives_out.jpg"></a>
+      <article>
+  			<section>
+          <h3>Screen 3</h3>
+					<section class="screen">
+	  				<div class="movie">
+							<figure>
+								<img src="img/now_showing/jumanji.jpg" alt="Jumanji: Welcome to the Jungle">
+							</figure>
+							<button type="button" name="more-info">More info</button>
+						</div>
+	          <div class="movie">
+							<figure>
+								<img src="img/now_showing/knives_out.jpg" alt="Knives Out">
+							</figure>
+							<button type="button" name="more-info">More info</button>
+						</div>
+					</section>
   			</section>
-        <section class="col-md-6 row">
-          <h3 class="col-12">Screen #</h3>
-  				<a class="col-6"><img src="img/now_showing/spies.jpg"></a>
-          <a class="col-6"><img src="img/now_showing/star_wars.jpg"></a>
+        <section>
+          <h3>Screen 4</h3>
+					<section class="screen">
+						<div class="movie">
+							<figure>
+								<img src="img/now_showing/cats.jpg" alt="Cats">
+							</figure>
+							<button type="button" name="more-info">More info</button>
+						</div>
+	          <div class="movie">
+							<figure>
+								<img src="img/now_showing/star_wars.jpg" alt="Star Wars: The Rise of Skywalker">
+							</figure>
+							<button type="button" name="more-info">More info</button>
+						</div>
+					</section>
   			</section>
     </article>
-		<aside class="page-name">
+		<aside>
 			<p>Movie specials and other important things</p>
 		</aside>
-		<article class="row">
-			<h3 class="col-12">Coming Soon</h3>
-			<section class="col-md-6 row">
-				<a class="col-6"><img src="img/coming_soon/dolittle.jpg"></a>
-				<a class="col-6"><img src="img/coming_soon/my_spy.jpg"></a>
+		<h3>Coming Soon</h3>
+		<article class="coming-soon">
+			<section>
+				<div class="movie">
+					<figure>
+						<img src="img/coming_soon/dolittle.jpg" alt="Dolittle">
+					</figure>
+					<button type="button" name="more-info">More info</button>
+				</div>
+				<div class="movie">
+					<figure>
+						<img src="img/coming_soon/my_spy.jpg" alt="My Spy">
+					</figure>
+					<button type="button" name="more-info">More info</button>
+				</div>
 			</section>
-			<section class="col-md-6 row">
-				<a class="col-6"><img src="img/coming_soon/underwater.jpg"></a>
-				<a class="col-6"><img src="img/coming_soon/fantasy_island.jpg"></a>
+			<section>
+				<div class="movie">
+					<figure>
+						<img src="img/coming_soon/underwater.jpg" alt="Underwater">
+					</figure>
+					<button type="button" name="more-info">More info</button>
+				</div>
+				<div class="movie">
+					<figure>
+						<img src="img/coming_soon/fantasy_island.jpg" alt="Fantasy Island">
+					</figure>
+					<button type="button" name="more-info">More info</button>
+				</div>
 			</section>
-
 		</article>
   </main>
-	<footer class="container">Input Text Here!</footer>
+	<footer><p>Footer content</p></footer>
+	<script src="js/responsive-nav.js"></script>
+	<script>
+		var nav = responsiveNav(".nav-collapse");
+	</script>
 </body>
 </html>
