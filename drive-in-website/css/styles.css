@@ -111,3 +111,112 @@ body.watch .movie{
 	background-color: #999;
 	padding: 2em;
 }
+
+/* Styles for Modal */
+
+.modal{
+  display: none; /* This keeps modal hidden until button clicked */
+  position: fixed; /* Keeps modal in place*/
+  z-index: 1;
+  padding-top: 15px; /*Where the box is located */
+  left: 0;
+  top: 0;
+  width: 100%; /* Displays full width */
+  height: 100%; /* Displays full height */
+  overflow: auto; /* Will allow user to scroll if absolutely neccessary */
+  background-color: rgba(0, 0, 0, 0.3); /* Black background behind content in modal. */
+}
+
+.modal {
+}
+
+.modal-content{
+	text-align: center;
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #AAA;
+  width: 85%;
+}
+
+.close-btn{
+  color: #AAA;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close-btn:hover, .close-btn:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-flex{
+  display: block;
+}
+
+.modal-image{
+  flex: 4;
+}
+
+.modal-text{
+  flex: 6;
+}
+
+.modal-text p, .modal-text h4{
+	padding-left: .5rem;
+}
+
+.inner-modal-image{
+  width: 100%;
+}
+
+.modal-text h3.modal-banner{
+	width: 97%;
+}
+
+div.modal-text h3{
+	width: 100%;
+	margin-top: .25rem;
+}
+
+
+#modalBtn1, #modalBtn2, #modalBtn3, #modalBtn4, #modalBtn5, #modalBtn6, #modalBtn7, #modalBtn8, #modalBtn9, #modalBtn10, #modalBtn11, #modalBtn12{
+	padding: 0;
+}
+
+h3{
+  font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: .25rem;
+}
+
+h4{
+  font-size: 1.5rem;
+  margin-top: .25rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:780px) {
+
+.modal-content{
+	text-align: left;
+  width: 60%;
+  margin: auto;
+}
+
+.modal-flex{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.modal-text{
+  padding-left: 1rem;
+}
+
+div.modal-text h3{
+	width: 97%;
+	margin-top: 0rem;
+}
+
+}
