@@ -76,6 +76,19 @@ font-style: italic;
 }
 
 /* Style for website */
+.jumbotron{
+	background: url(../img/masthead.jpg);
+	width:100%;
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+body{
+	background: url(../img/bg-home.jpg);
+}
 body.home .jumbotron{
 	background-color: #777;
 }
@@ -85,15 +98,18 @@ body.home .jumbotron p{
 	padding: 1em 0.5em;
 }
 body.home nav div a{
-	background-color: #444;
+
 	color: #fff;
 	text-decoration: none;
-	border: #777 solid 2px;
+	/* border: #777 solid 2px; */
+}
+.page-name{
+	padding:0;
 }
 body.watch .page-name, body.watch aside{
-	background-color: #444;
+	/* background-color: #444; */
 	color: #fff;
-	padding: 2em 0em;
+
 }
 body.watch header nav ol li a{
 	font-size: 1.25em;
@@ -102,12 +118,212 @@ body.watch header nav ol li a{
 body.watch h2{
 	font-size: 2em;
 }
-body.watch h3 {
-	background-color: #444;
-	color: #fff;
-	padding: 1em 0em;
-}
+
 body.watch .movie{
-	background-color: #999;
-	padding: 2em;
+	background-color: #ddd;
+	padding: .5em;
+	margin: 0 auto;
+}
+nav{
+	background: url(../img/bg-home.jpg);
+	border-top: 10px solid transparent;
+  /* padding: 15px; */
+  border-image: url(../img/border.png) 30 round;
+}
+.nav-container-mobile{
+	display:flex;
+	flex-flow: column nowrap;
+}
+.nav-container{
+	display:flex;
+	flex-flow: row nowrap;
+
+}
+.home-link-container{
+	display: block;
+	width:100%;
+	opacity:.65;
+
+}
+.home-link-container:hover{
+	opacity:1;
+	cursor: pointer;
+}
+.home-icon{
+	display:block;
+	margin: 0 auto;
+	width:50%;
+	max-width:300px;
+	cursor: pointer;
+}
+
+/*====================================Watch Page=============================*/
+/* Style for website */
+body.home .jumbotron{
+background-color: #777;
+}
+body.home .jumbotron p{
+color: #fff;
+font-size: 1.2em;
+padding: 1em 0.5em;
+}
+body.home nav div a{
+/* background-color: #444; */
+color: #fff;
+text-decoration: none;
+/* border: #777 solid 2px; */
+}
+
+
+body.watch header nav ol li a{
+font-size: 1.25em;
+text-decoration: none;
+}
+body.watch h2{
+font-size: 6rem;
+}
+body.watch h3 {
+background-color: #444;
+color: #fff;
+padding: 1em 0em;
+}
+
+
+/* button styling */
+html{
+font-family: 'Girassol', cursive;
+}
+.btn{
+text-decoration: none;
+margin: 1rem auto 0 auto;
+padding: 1rem ;
+background-color: #f9ad67;
+width: 150px;
+border-radius: 5px;
+font-family: 'Girassol', cursive;
+font-weight: 700;
+font-style: normal;
+font-size: 1.2rem;
+color: black;
+text-align: center;
+}
+.btn:hover{
+text-decoration: none;
+
+
+background-color: white;
+
+font-family: 'Girassol', cursive; font-weight: 700;
+font-style: normal;
+}
+
+/*navigation styling
+<header id="fixedbar">
+<nav class="nav-collapse">
+<ol id="fixednav">
+<li><a href="index.html">Home</a></li>
+<li><a href="watch.html">Watch</a></li>
+<li><a href="#">Play</a></li>
+<li><a href="#">Eat</a></li>
+<li><a href="#">Learn</a></li>
+</ol>
+</nav>
+</header>
+ */
+
+#fixedbar{
+background-color: #f9ad67 ;
+padding-bottom: .5rem;
+}
+#fixednav{
+background-color: #f9ad67;
+}
+
+#fixednav li{
+ background-color: #f9ad67;
+ border-top: solid 1px white;
+ padding: .5rem;
+}
+
+#fixednav li:hover{
+ background-color: purple;
+ padding: .5rem;
+ color: white;
+}
+#fixednav a{
+color: black;
+}
+#fixednav a:hover{
+color: white;
+}
+.header_p{
+font-size: 1.6rem;
+}
+.logo_display{
+width: 50px;
+float: right;
+}
+.movie-img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+
+.nav-collapse{
+	background: none;
+}
+body.watch img.watch-header{
+	max-width: 100%;
+	max-height: 100%;
+}
+.screen-head{
+	display:block;
+	margin: .5rem auto .5rem auto;
+}
+.coming-soon-img{
+	height:100%;
+}
+
+@media screen and (min-width:780px){
+#fixednav li{
+border-top: none;
+font-size: 1.4rem;
+}
+.logo_display{
+width: 30%;
+float: left;
+}
+}
+@media screen and (min-width:780px){
+/*HOME PAGE STYLES */
+.nav-container-mobile{
+	display:flex;
+	flex-flow: row nowrap;
+}
+.home-link-container{
+	display: block;
+	width:100%;
+	opacity:.65;
+
+}
+.home-link-container:hover{
+	display: block;
+	width:100%;
+	opacity:1;
+	cursor: pointer;
+}
+.home-nav{
+	border-left: 10px solid transparent;
+	border-spacing: 10px;
+	border-image: url(../img/border.png) 30 round;
+}
+.nav-container{
+	width:100%;
+}
+.home-icon{
+	display:block;
+	margin: 0 auto;
+	width:100%;
+	max-width:300px;
+	cursor: pointer;
 }

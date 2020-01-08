@@ -4,24 +4,42 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0,width=device-width,maximum-scale=1,minimum-scale=1,user-scalable=no" />
 	<title>Neon Drive In | Home</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="css/position.css" />
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
 </head>
 <body class="home">
   <header class="jumbotron">
-		<p>In CSS, mention background image for jumbotron to place the image here.</p>
-		<p>The jumbotron has no set max width or max height. The height is made with vh and it has a width of 100%.</p>
-		<p>The links below also have no max width</p>
+
   </header>
 	<main>
 		<nav>
-			<div>
-				<a href="watch.html"><p>Watch</p></a>
-				<a href="#"><p>Play</p></a>
-			</div>
-			<div>
-				<a href="#"><p>Eat</p></a>
-				<a href="#"><p>Learn</p></a>
+			<div class="nav-container-mobile">
+				<div class="nav-container">
+						<a  href="watch.html">
+							<div class="home-link-container">
+								<img class="home-icon" src="img/watch-icon-combo.png" />
+							</div>
+						</a>
+						<a class="home-nav" href="#">
+							<div class="home-link-container home-link-container-border">
+								<img class="home-icon" src="img/eat-icon-combo.png" />
+							</div>
+						</a>
+
+				</div>
+				<div class="nav-container">
+					<a class="home-nav" href="#">
+						<div class="home-link-container home-link-container-border">
+							<img class="home-icon" src="img/play-icon-combo.png" />
+						</div>
+					</a>
+					<a class="home-nav" href="#">
+						<div class="home-link-container home-link-container-border">
+							<img class="home-icon" src="img/learn-icon-combo.png" />
+						</div>
+					</a>
+				</div>
 			</div>
 		</nav>
 	</main>

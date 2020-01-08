@@ -3,18 +3,18 @@ body.home .jumbotron{
 	height: 69vh;
 }
 body.home nav div+div{
-	position: fixed;
+
 	bottom: 0;
 	width: 100%;
 }
 body.home nav div{
 	display: flex;
-	flex-flow: row nowrap;
+
 	width: 100%;
 }
 body.home nav div a{
 	text-align: center;
-	padding: 3em 0em;
+
 	width: 100%;
 }
 /* Watch Page Mobile */
@@ -35,17 +35,21 @@ body.watch .nav-toggle{
 body.watch header nav ol li a{
 	font-size: 1.25em;
 	display: block;
+	text-align: center;
 }
 body.watch .movie{
 	display: flex;
 	flex-flow: column nowrap;
 	margin: 0.5em;
-	width: 50%;
+	/* width: 50%; */
 }
 body.watch .screen, body.watch .coming-soon section{
 	display: flex;
 	flex-flow: row nowrap;
 	margin: 0.5em;
+}
+.nav-toggle{
+	max-width: 25px;
 }
 @media screen and (min-width:780px){
 	/* Home Page Desktop */
